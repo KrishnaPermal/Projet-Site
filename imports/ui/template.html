@@ -1,0 +1,70 @@
+<template name="jumbotron">
+    <div class="jumbotron" style="text-align:center; color:rgb(16, 112, 238); background-color:rgb(29, 29, 34);" id="jumbo">
+            <h1 class="display-4">Dragon Ball Z: Budokai Tenkaichi 3</h1>
+            <p class="lead">Dragon Ball Z: Budokai Tenkaichi 3 (ドラゴンボールZ Sparking! METEOR, Doragon bōru zetto: Supākingu! Meteor?, littéralement « Dragon Ball Z: Étincelle! Météore ») est un jeu vidéo de combat, édité par Atari et Namco Bandai Holdings et développé par Spike sur l'univers de Dragon Ball Z. Il est disponible depuis fin 2007 sur PlayStation 2 et Wii.
+                Cet opus fait suite à Dragon Ball Z: Budokai Tenkaichi 2 sorti sur les mêmes supports en 2006 et 2007.
+                Ainsi, plus de 160 personnages (transformations comprises) sont jouables dans une sélection de trente arènes disponibles dont certaines sont disponibles en trois versions : jour, soir et nuit. Dans certaines arènes, la nuit permet aux Saiyans ayants leurs queues d'utiliser la lune pour se transformer en singes géants. Certains utilisent une lune artificielle qu'ils créeront eux-mêmes comme Vegeta, Thalès et le roi Vegeta. </p>
+            <hr class="my-4">
+
+            <a class="btn btn-warning; color:rgb(16, 120, 238)" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Learn more</a>
+            <hr class="my-4">
+            <div class="collapse multi-collapse" id="multiCollapseExample1"> 
+                <div class="card card-body" style="background-color:rgb(29, 29, 34);">
+                        <h1 class="display-4">Modes de jeu</h1>
+                        
+                <p>Le mode « Scénario » propose plusieurs séries de combats semi-scriptés, reprenant les principaux moments forts des sagas Dragon Ball, Dragon Ball Z et Dragon Ball GT.
+                        La saga Saiyens permet de combattre Raditz, puis Nappa et enfin Vegeta.
+                        La saga Freezer entraîne le joueur sur la planète Namek, où il devra affronter les troupes de Freezer (le commando Guinue), puis le tyran lui-même. Dans la deuxième partie, le joueur est Freezer et doit combattre Krilin, Piccolo, Son Gohan et Vegeta avec les diverses transformations du tyran, puis lors des deux dernières parties, le joueur incarne Son Goku pour battre définitivement Freezer.
+                        La saga Cyborgs met le joueur aux prises avec les androïdes du Docteur Gero puis avec Cell et ses divers transformations.
+                        La saga Boo retrace les multiples combats de Son Goku et ses amis contre la créature maléfique Boo.
+                        La saga Spéciale regroupe les meilleurs combats des films et OAV Dragon Ball Z, notamment ceux impliquant Cooler, C-13, Broly, Bojack ou encore Janemba.
+                        La saga Dragon Ball GT résume l'anime GT, avec entre autres les combats contre Baby (Dragon Ball GT), Super C-17 et Li Shenron.
+                        La saga Dragon Ball reprend quant à elle certains passages du manga Dragon Ball. On y retrouve par exemple Nam, Aralé, Tao Pai Pai et le Commandant Blue.
+                        Enfin, la saga alternative propose plusieurs combats originaux, versions alternatives de ceux présentés dans le manga.</p>
+
+                <p>Le mode « Combat ultime » regroupe en fait plusieurs modes de jeu différents :
+                        Le mode « Dragon Sim » succède les phases d'entraînements et les phases de combat, le but étant de vaincre le plus d'adversaires possibles.
+                        Le mode « Mission 100 » propose d'affronter différentes équipes d'adversaires tout en essayant d'obtenir le meilleur score possible.
+                        Le mode « Survie » propose d'affronter 50 guerriers très puissants sans mourir.
+                        Le mode « Fusion de disque » propose de revivre les Combats ultimes de Dragon Ball Z: Budokai Tenkaichi et Dragon Ball Z: Budokai Tenkaichi 2.</p>
+                
+                <p>Le mode « Tour du monde » propose un ensemble de 5 tournois, jouables seuls (Tour du Monde ouvert à une plage horaire spécifique) ou à deux ou plus (libre). Ils sont jouables au niveau 1-2-3.
+                        Le « Championnat »
+                        Le « Grand tournoi »
+                        Le « Cell Game »
+                        Le « Tournoi de l'au-delà »
+                        Le « Tournoi de Yamcha »</p>
+
+                <p>Le mode « Duel » permet d'affronter l'ordinateur ou un second joueur dans des combats paramétrables, en un-contre-un ou en équipes.</p> 
+                <p>Le mode « Evolution Z » permet, grâce aux Points Z gagnés dans les autres modes de jeu, d'améliorer ses personnages et d'acheter des Artefacts Z,<br>qui confèrent différentes capacités aux combattants qui en sont équipés. Mais il reste bien difficile de modifier certains personnages.</p> 
+                <br><p>Le mode « Entraînement » permet d'apprendre les techniques de base et avancées du jeu, et d'expérimenter librement les attaques des différents personnages.</p>
+                <br><p>Le mode « Données » permet de sauvegarder ses guerriers les plus puissants grâce à un système de mots de passe.Il est ainsi possible d'échanger des personnages avec d'autres joueurs, en leur donnant les mots de passe.<br>Ce mode permet également de visionner les replays de combats enregistrés par le joueur.</p>
+                <br><p>Enfin, le mode « Bio personnages » propose une encyclopédie de tous les personnages jouables. Chaque combattant possède ainsi sa fiche, avec un court historique, un enregistrement de voix, des commentaires de Chichi et une galerie de costumes.</p>
+            </div>
+            </div>
+    </div>
+</template>
+
+<!--Création de la collection-->
+
+<template name="collection">
+    
+
+
+
+<div class="card" style="width: 18rem;">
+    <button class="delete">&times;</button>
+    <img class="card-img-top" src="{{lien}}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{text}}</h5>
+        <p class="card-text">{{desc}}</p>
+
+        <!-- Button trigger modal -->
+    <button type="button" class="btn-edit-membre btn-primary" data-toggle="modal" data-target="#exampleModal" data-id="{{_id}}">
+        modifier
+    </button>
+
+    
+    </div>
+</div>
+</template>

@@ -1,0 +1,39 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+  background-color: rgb(77, 83, 83);
+}
+
+.navbar{
+  border: 3px rgb(16, 112, 238) double;
+  border-radius: 10px; 
+}
+
+.jumbotron{
+  text-align: center;
+}
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
+
+footer{
+  display: flex;
+  padding: 50px 100px;
+  background-color: #3a1f6675;
+  color: #fff;
+  border-radius: 10px;
+  border: 5px rgba(20, 194, 194, 0.507) double;
+}
+
+.foot{
+  background-color: #00000075;
+  padding: 30px 100px;
+  border: 2px rgb(16, 238, 27) double;
+}
+
+
